@@ -9,10 +9,10 @@ public class MySketch extends PApplet {
     private final String[] dogBreeds = {"Great Dane","Cairn Terrier","Bull Terrier","Beagle"};
     private final int[] dogAges = {10,2,7,53};
     private final String[] dogImages = {"resources/scoobydoo_small.png", "resources/toto_small.png", "resources/spuds_small.png", "resources/snoopy_small.png"};
-    private final String[] catNames = {"Samel", "Felix"};
-    private final String[] catBreeds = {"American Shorthair"};
-    private final int[] catAges = {500,102};
-    private final String[] catImages = {"resources/salem.png", "resources/felix.png"};
+    // private final String[] catNames = {"Samel", "Felix"};
+    // private final String[] catBreeds = {"American Shorthair"};
+    // private final int[] catAges = {500,102};
+    // private final String[] catImages = {"resources/salem.png", "resources/felix.png"};
 
     public void settings() {
         size(500, 700);
@@ -37,4 +37,13 @@ public class MySketch extends PApplet {
         shelter.name();
         shelter.displayAnimals();
     }
+
+    // public void mousePressed(){
+    //     if (button.isSelected(mouseX, mouseY))
+    //     for(int i = dogNames.length -1; i > 0; i++ ){
+    //         shelter.outTake(i);
+    //    }
+    //}
+
+    
 }

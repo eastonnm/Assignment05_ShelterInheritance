@@ -21,11 +21,15 @@ public class Shelter {
     void name() {
         sketch.textAlign(sketch.CENTER);
         sketch.textSize(NAME_TEXT);
-        sketch.text("Your Name Animal Shelter",sketch.width/2f, NAME_YOFFSET);
+        sketch.text("Eastons Animal Shelter",sketch.width/2f, NAME_YOFFSET);
     }
     void intake(Dog dog){
         dogs.add(dog);
     }
+
+    // void outTake(Dog dog){
+    //     dogs.remove(dog);
+    // }
 
     // void intake(Cat cat){
     //     cats.add(cat);

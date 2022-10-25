@@ -11,6 +11,7 @@ public class Dog {
     private int age;
     private static final int PADDING = 10;
     private Button button;
+    private Button button2;
 
     public Dog(PApplet sketch, String name, String breed, int age, PImage img) {
         this.sketch = sketch;
@@ -20,6 +21,7 @@ public class Dog {
         this.breed = breed;
         this.age = age;
         button = new Button(this.sketch,"Adopt Me");
+        button2 = new Button(this.sketch, "Hear Me");
     }
 
     public void draw(int x, int y) {
@@ -31,6 +33,7 @@ public class Dog {
         sketch.image(img, x, y);
         displayInformation(infoXPosition,y);
         button.draw(adoptButtonXPosition,adoptButtonYPosition);
+        button2.draw(adoptButtonXPosition + 150,adoptButtonYPosition);
     }
 
     private void displayInformation(int x, int y){
@@ -43,5 +46,7 @@ public class Dog {
     public String toString() {
         return String.format("Name: %s, Breed: %s, Age: %d",name, breed, age);
     }
+
+    
 }
 

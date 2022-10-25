@@ -33,4 +33,24 @@ public class Button {
         sketch.textAlign(CENTER);
         sketch.text(text,x+width/2,y+(height/2));
     }
+
+    // public boolean isSelected(int x, int y){
+    //     return((x >= rightEdge() && x >= leftEdge()) && (y <= bottomEdge() && y >= topEdge()));
+    // }
+
+    // private float leftEdge(){
+    //     return (x);
+    // }
+
+    // private float rightEdge(){
+    //     return (x + width);
+    // }
+    
+    // private float topEdge(){
+    //     return (y);
+    // }
+    // private float bottomEdge(){
+    //     return (y + height);
+    // }
+
 }
