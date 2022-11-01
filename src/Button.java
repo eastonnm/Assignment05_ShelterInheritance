@@ -27,6 +27,8 @@ public class Button {
     }
 
     public void draw(int x, int y){
+        this.x = x;
+        this.y = y;
         sketch.fill(WHITE);
         sketch.rect(x,y,width,height);
         sketch.fill(BLACK);
@@ -34,23 +36,20 @@ public class Button {
         sketch.text(text,x+width/2,y+(height/2));
     }
 
-    // public boolean isSelected(int x, int y){
-    //     return((x >= rightEdge() && x >= leftEdge()) && (y <= bottomEdge() && y >= topEdge()));
-    // }
 
-    // private float leftEdge(){
-    //     return (x);
-    // }
+    public float leftEdge(){
+        return (x);
+    }
 
-    // private float rightEdge(){
-    //     return (x + width);
-    // }
+    public float rightEdge(){
+        return (x+BUTTON_WIDTH);
+    }
     
-    // private float topEdge(){
-    //     return (y);
-    // }
-    // private float bottomEdge(){
-    //     return (y + height);
-    // }
+    public float topEdge(){
+        return (y);
+    }
+    public float bottomEdge(){
+        return (y+BUTTON_HEIGHT);
+    }
 
 }

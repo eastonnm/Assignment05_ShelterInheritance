@@ -47,6 +47,10 @@ public class Dog {
         return String.format("Name: %s, Breed: %s, Age: %d",name, breed, age);
     }
 
+    public boolean buttIsClicked(int x, int y){
+        System.out.println("True");
+        return(x >= button.rightEdge() && x >= button.leftEdge()) && (y <= button.bottomEdge() && y >= button.topEdge());
+    }
     
 }
 

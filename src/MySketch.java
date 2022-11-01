@@ -3,6 +3,8 @@ import processing.core.PFont;
 
 public class MySketch extends PApplet {
     private Shelter shelter;
+    private Button button;
+    private Dog dog;
     private final int BACKGROUND_COLOR = 122;
     private final int FONT_SIZE = 10;
     private final String[] dogNames = {"Scooby-Doo","Toto","Spuds Mackenzie","Snoopy"};
@@ -29,8 +31,8 @@ public class MySketch extends PApplet {
         for(int i=0; i<dogNames.length;++i)
             shelter.intake(new Dog(this, dogNames[i],dogBreeds[i],dogAges[i], loadImage(dogImages[i])));
 
-    //     for(int i=0; i<catNames.length;++i)
-    //         shelter.intake(new Cat(this, catNames[i],catBreeds[i],catAges[i], loadImage(catImages[i])));
+        // for(int i=0; i<catNames.length;++i)
+        //     shelter.intake(new Cat(this, catNames[i],catBreeds[i],catAges[i], loadImage(catImages[i])));
     }
     public void draw() {
         background(BACKGROUND_COLOR);
@@ -38,12 +40,17 @@ public class MySketch extends PApplet {
         shelter.displayAnimals();
     }
 
-    // public void mousePressed(){
-    //     if (button.isSelected(mouseX, mouseY))
+    public void mousePressed(){
+        if (dog.buttIsClicked(mouseX, mouseY)){
+        System.out.println("true");
+        }else {
+            System.out.println("false");
+        }
+        
     //     for(int i = dogNames.length -1; i > 0; i++ ){
     //         shelter.outTake(i);
     //    }
-    //}
+    }
 
-    
 }
+
