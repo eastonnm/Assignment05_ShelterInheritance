@@ -37,7 +37,7 @@ public class Button {
     }
 
     public boolean isClicked(int x, int y){
-        return(leftEdge() <= x && rightEdge() >= x  && y <= bottomEdge() && y >= topEdge());
+        return(leftEdge() <= x && rightEdge() >= x  && y >= bottomEdge() && y <= topEdge());
     }
     
 
@@ -52,6 +52,7 @@ public class Button {
     public float topEdge(){
         return (y);
     }
+
     public float bottomEdge(){
         return (y + BUTTON_HEIGHT);
     }

@@ -3,8 +3,7 @@ import java.util.ArrayList;
 
 public class Shelter {
     private ArrayList<Animal> animals;
-    //private ArrayList<Dog> dogs;
-    //private ArrayList<Cat> cats;
+
     private PApplet sketch;
     private float x,y;
     private final int ANIMAL_ENTRY_XOFFSET = 50;
@@ -15,19 +14,25 @@ public class Shelter {
     Shelter(PApplet sketch) {
         this.sketch = sketch;
 
-        //dogs = new ArrayList<Dog>();
-        //cats = new ArrayList<Cat>();
         animals = new ArrayList<Animal>();
+        
     }
     void name() {
         sketch.textAlign(sketch.CENTER);
         sketch.textSize(NAME_TEXT);
         sketch.text("Eastons Animal Shelter",sketch.width/2f, NAME_YOFFSET);
     }
+
     void intake(Animal animal){
         animals.add(animal);
     }
 
+    // void gone (Animal animal){
+    //     for (int i = animals.size()-1; i >= 0; i--)
+    //         if(animal.isAdopted()){
+    //             animals.remove(i);
+    //     }
+    // }
 
 
     void displayAnimals(){

@@ -9,7 +9,11 @@ Beagle
 10
 2
 7
-53  
+53 
+ "resources/scoobydoo_small.png"
+ "resources/toto_small.png"
+ "resources/spuds_small.png"
+ "resources/snoopy_small.png"
 Samel
 Felix
 American Shorthair
