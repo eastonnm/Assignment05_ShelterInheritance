@@ -27,12 +27,24 @@ public class Shelter {
         animals.add(animal);
     }
 
-    // void gone (Animal animal){
-    //     for (int i = animals.size()-1; i >= 0; i--)
-    //         if(animal.isAdopted()){
-    //             animals.remove(i);
-    //     }
-    // }
+    void adopt (int mouseX, int mouseY){
+        //grab a dog from the shelter
+        //see if mouse was clicked on this dog
+        //if yes print a message
+        //if no grab next dog and repeat
+        //if checked all dogs none clicked print none selected
+
+        //for (int i = animals.size()-1; i >= 0; i--)
+        for (Animal animal: animals){
+            boolean isAdopt = animal.isAdoptMeClicked(mouseX, mouseY);
+            if (isAdopt){
+                System.out.println("found one");
+                break;
+            }
+        }
+
+        
+    }
 
 
     void displayAnimals(){

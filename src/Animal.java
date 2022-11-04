@@ -10,14 +10,14 @@ public class Animal {
     private final int INFO_TEXT_SIZE= 12;
     private String name;
     private String breed;
-    private String age;
+    private int age;
     private final int PADDING = 10;
     private Button button;
     private Button button2;
-    Sound sound;
+    SoundFile sound;
 
 
-    public Animal(PApplet sketch, String name, String breed, String age, PImage img) {
+    public Animal(PApplet sketch,String type, String name, String breed, int age, PImage img) {
         this.sketch = sketch;
         this.img = img;
         img.resize(img.width/SCALE_FACTOR, img.height/SCALE_FACTOR);
@@ -50,7 +50,7 @@ public class Animal {
     }
     
     public void sound(){
-        if (button2.isClicked(sketch.mouseX, sketch.mouseY)){
+       {
             sound = new SoundFile(sketch, "read.mp3");
             sound.play();
         }
@@ -58,13 +58,10 @@ public class Animal {
     }
 
 
-    public boolean adopted(){
-        if (button.isClicked(sketch.mouseX, sketch.mouseY)){
-        return true;
-    }
-        else {
-            return false;
-        }
+    public boolean isAdoptMeClicked(int mouseX, int mouseY){
+        return (mouseX > button.rightEdge()) && (mouseX < button.leftEdge()
+            && mouseY > button.topEdge() && mouseY < button.bottomEdge() );
+              
     }
 
 }

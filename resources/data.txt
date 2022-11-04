@@ -1,8 +1,8 @@
-dog,Scooby-Doo,Great Dane,10,scoobydoo_small.png
-dog,Toto,Cairn Terrier,2,toto_small.png
-dog,Spuds Mackenzie,Bull Terrier,7,spuds_small.png
-dog,Snoopy,Beagle,53,snoopy_small.png
-cat,Salem,American Shorthair,500,salem.png
-cat, Felix,Tuxedo,102,felix.png
-fish,SpongeBob,sea sponge,20,spongebob.png
-fish,Patrick,Starfish,37,patrick.png
+dog,Scooby-Doo,Great Dane,10,resource/scoobydoo_small.png
+dog,Toto,Cairn Terrier,2,resource/toto_small.png
+dog,Spuds Mackenzie,Bull Terrier,7,resourse/spuds_small.png
+dog,Snoopy,Beagle,53,resource/snoopy_small.png
+cat,Salem,American Shorthair,500,resourse/salem.png
+cat, Felix,Tuxedo,102,resourse/felix.png
+fish,SpongeBob,sea sponge,20,resourse/spongebob.png
+fish,Patrick,Starfish,37,resourse/patrick.png

@@ -36,25 +36,22 @@ public class Button {
         sketch.text(text,x+width/2,y+(height/2));
     }
 
-    public boolean isClicked(int x, int y){
-        return(leftEdge() <= x && rightEdge() >= x  && y >= bottomEdge() && y <= topEdge());
-    }
     
 
-    public float leftEdge(){
-        return (x);
+    public int leftEdge(){
+        return x;
     }
 
-    public float rightEdge(){
-        return (x + BUTTON_WIDTH);
+    public int rightEdge(){
+        return (int)(x + BUTTON_WIDTH);
     }
     
-    public float topEdge(){
-        return (y);
+    public int topEdge(){
+        return y;
     }
 
-    public float bottomEdge(){
-        return (y + BUTTON_HEIGHT);
+    public int bottomEdge(){
+        return (int)(y + BUTTON_HEIGHT);
     }
 
 }
